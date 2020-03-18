@@ -5,17 +5,39 @@ public class Main {
         // main loop simulate number of days
         Market theMarket = new Market();
 
-        theMarket.makeBuyer(10, 44);
-        theMarket.makeBuyer(20,46);
-        theMarket.makeBuyer(30, 48);
-        theMarket.makeBuyer(40, 50);
-        theMarket.makeBuyer(50, 52);
-        theMarket.makeBuyer(60, 54);
+        theMarket.makeBuyer(60, 44);
+        theMarket.makeBuyer(60,46);
+        theMarket.makeBuyer(60, 48);
+        theMarket.makeBuyer(60, 50);
+        theMarket.makeBuyer(60, 60);
+        theMarket.makeBuyer(60, 60);
+        theMarket.makeBuyer(60,46);
+        theMarket.makeBuyer(60, 48);
+        theMarket.makeBuyer(60, 50);
+        theMarket.makeBuyer(60, 60);
+        theMarket.makeBuyer(60, 60);
+        theMarket.makeBuyer(60,46);
+        theMarket.makeBuyer(60, 48);
+        theMarket.makeBuyer(60, 50);
+        theMarket.makeBuyer(60, 60);
+        theMarket.makeBuyer(60, 60);
 
-        theMarket.makeSeller(10, 54);
-        theMarket.makeSeller(20, 56);
-        theMarket.makeSeller(30, 58);
+        theMarket.makeSeller(60, 70);
+        theMarket.makeSeller(20, 30);
         theMarket.makeSeller(40, 60);
+        theMarket.makeSeller(30, 40);
+        theMarket.makeSeller(35, 50);
+        theMarket.makeSeller(20, 30);
+        theMarket.makeSeller(20, 30);
+        theMarket.makeSeller(40, 60);
+        theMarket.makeSeller(30, 40);
+        theMarket.makeSeller(35, 50);
+        theMarket.makeSeller(20, 30);
+        theMarket.makeSeller(20, 30);
+        theMarket.makeSeller(40, 60);
+        theMarket.makeSeller(30, 40);
+        theMarket.makeSeller(35, 50);
+        theMarket.makeSeller(20, 30);
 
         ArrayList<Integer> sellerDesirePrice = new ArrayList<>();
         ArrayList<Integer> buyerDesirePrice = new ArrayList<>();
@@ -44,7 +66,7 @@ public class Main {
 
         theMarket.startMarket();
 
-        for(int x = 1; x <= 15; x++) {
+        for(int x = 1; x <= 20; x++) {
             // day one
             System.out.println("day " + x);
             while (!theMarket.checkMarketDone()) {
