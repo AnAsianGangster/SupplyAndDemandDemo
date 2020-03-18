@@ -13,6 +13,7 @@ public class Market {
     }
 
     void makeSeller(int SellerID, int lowersetSellingPrice){
+        Seller newSeller = new Seller(SellerID, lowersetSellingPrice);
 
     }
 

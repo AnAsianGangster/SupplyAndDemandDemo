@@ -9,10 +9,9 @@ public class Seller implements Person {
     boolean madeTransactionToday;
     boolean haveBroughtAnItem;
 
-    public Seller(int sellerID, int lowersetSellingPrice, int desiredSellingPrice) {
+    public Seller(int sellerID, int lowersetSellingPrice) {
         SellerID = sellerID;
         this.lowersetSellingPrice = lowersetSellingPrice;
-        this.desiredSellingPrice = desiredSellingPrice;
     }
 
     @Override
