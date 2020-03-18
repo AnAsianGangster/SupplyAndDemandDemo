@@ -1,22 +1,14 @@
 public class Buyer implements Person {
     // fixed after initialization
-    int BuyerID;
     int highestBuyingPrice;
 
     // varies per day
     int desiredBuyingPrice;
     int transactionPrice;
-    boolean madeTransactionToday;
-    boolean haveAnItemToSell;
 
-    public Buyer(int buyerID, int highestBuyingPrice) {
-        BuyerID = buyerID;
+    public Buyer(int highestBuyingPrice, int initialDesiredBuyingPrice) {
         this.highestBuyingPrice = highestBuyingPrice;
-    }
-
-    @Override
-    public void updatePrices(boolean madeTransaction, int transactionPrice) {
-
+        this.desiredBuyingPrice = initialDesiredBuyingPrice;
     }
 
     @Override

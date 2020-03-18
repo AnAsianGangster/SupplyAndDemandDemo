@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32af9f63-1610-42ae-98ff-21edbdfa18c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Market.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +45,15 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584522874939</updated>
       <workItem from="1584522876205" duration="1549000" />
-      <workItem from="1584525342934" duration="880000" />
+      <workItem from="1584525342934" duration="6942000" />
     </task>
     <servers />
   </component>
@@ -64,10 +77,34 @@
       <screen x="68" y="23" width="1372" height="877" />
     </state>
     <state x="320" y="115" key="#Project_Structure/68.23.1372.877@68.23.1372.877" timestamp="1584522882471" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584530311656">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584530311656" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1584524159304">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1584524159304" />
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584530310652">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="457" y="241" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1584530310652" />
+    <state width="1398" height="219" key="GridCell.Tab.0.bottom" timestamp="1584532758073">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584532758073" />
+    <state width="1398" height="219" key="GridCell.Tab.0.center" timestamp="1584532758072">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584532758072" />
+    <state width="1398" height="219" key="GridCell.Tab.0.left" timestamp="1584532758072">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584532758072" />
+    <state width="1398" height="219" key="GridCell.Tab.0.right" timestamp="1584532758073">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="219" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584532758073" />
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1584525343203">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
