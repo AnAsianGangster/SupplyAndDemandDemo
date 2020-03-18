@@ -41,13 +41,13 @@ public class Market {
         int buyerAskPrice = availBuyerList.get(buyerIndex).desiredBuyingPrice;
 
         // successful transaction
-        if(sellerAskPrice >= buyerAskPrice){
-            if(availSellerList.get(sellerIndex).desiredSellingPrice > availSellerList.get(sellerIndex).lowersetSellingPrice + marketPriceIndividualChange){
+        if(sellerAskPrice <= buyerAskPrice){
+//            if(availSellerList.get(sellerIndex).desiredSellingPrice > availSellerList.get(sellerIndex).lowersetSellingPrice + marketPriceIndividualChange){
             availSellerList.get(sellerIndex).desiredSellingPrice += marketPriceIndividualChange;
-            }
-            if(availBuyerList.get(buyerIndex).desiredBuyingPrice < availBuyerList.get(buyerIndex).highestBuyingPrice - marketPriceIndividualChange){
+//            }
+//            if(availBuyerList.get(buyerIndex).desiredBuyingPrice < availBuyerList.get(buyerIndex).highestBuyingPrice - marketPriceIndividualChange){
             availBuyerList.get(buyerIndex).desiredBuyingPrice -= marketPriceIndividualChange;
-            }
+//            }
             availSellerList.remove(sellerIndex);
             availBuyerList.remove(buyerIndex);
             numerOfTransactionMadeToday++;

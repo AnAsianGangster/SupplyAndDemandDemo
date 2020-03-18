@@ -5,6 +5,7 @@ public class Seller implements Person {
     // varies per day
     int desiredSellingPrice;
     int transactionPrice;
+    boolean hasAnItemToSell;
 
     public Seller(int lowersetSellingPrice, int initialDesiredSellingPrice) {
         this.lowersetSellingPrice = lowersetSellingPrice;

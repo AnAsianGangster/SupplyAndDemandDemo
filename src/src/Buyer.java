@@ -5,6 +5,7 @@ public class Buyer implements Person {
     // varies per day
     int desiredBuyingPrice;
     int transactionPrice;
+    boolean hasAnItemToBuy;
 
     public Buyer(int highestBuyingPrice, int initialDesiredBuyingPrice) {
         this.highestBuyingPrice = highestBuyingPrice;

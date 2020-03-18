@@ -5,39 +5,56 @@ public class Main {
         // main loop simulate number of days
         Market theMarket = new Market();
 
-        theMarket.makeBuyer(60, 44);
-        theMarket.makeBuyer(60,46);
-        theMarket.makeBuyer(60, 48);
-        theMarket.makeBuyer(60, 50);
-        theMarket.makeBuyer(60, 60);
-        theMarket.makeBuyer(60, 60);
-        theMarket.makeBuyer(60,46);
-        theMarket.makeBuyer(60, 48);
-        theMarket.makeBuyer(60, 50);
-        theMarket.makeBuyer(60, 60);
-        theMarket.makeBuyer(60, 60);
-        theMarket.makeBuyer(60,46);
-        theMarket.makeBuyer(60, 48);
-        theMarket.makeBuyer(60, 50);
-        theMarket.makeBuyer(60, 60);
-        theMarket.makeBuyer(60, 60);
+//        theMarket.makeBuyer(55, 45);
+//        theMarket.makeBuyer(65, 55);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
+//        theMarket.makeBuyer(60, 40);
 
-        theMarket.makeSeller(60, 70);
-        theMarket.makeSeller(20, 30);
+//        theMarket.makeBuyer(60, 40);
+//        theMarket.makeBuyer(60, 40);
+//        theMarket.makeBuyer(60,46);
+//        theMarket.makeBuyer(60, 48);
+//        theMarket.makeBuyer(60, 50);
+//        theMarket.makeBuyer(60, 60);
+//        theMarket.makeBuyer(60, 60);
+//        theMarket.makeBuyer(60,46);
+//        theMarket.makeBuyer(60, 48);
+//        theMarket.makeBuyer(60, 50);
+//        theMarket.makeBuyer(60, 60);
+//        theMarket.makeBuyer(60, 60);
+//        theMarket.makeBuyer(60,46);
+//        theMarket.makeBuyer(60, 48);
+//        theMarket.makeBuyer(60, 50);
+//        theMarket.makeBuyer(60, 60);
+//        theMarket.makeBuyer(60, 60);
+
+//        theMarket.makeSeller(45, 55);
+//        theMarket.makeSeller(55, 65);
         theMarket.makeSeller(40, 60);
-        theMarket.makeSeller(30, 40);
-        theMarket.makeSeller(35, 50);
-        theMarket.makeSeller(20, 30);
-        theMarket.makeSeller(20, 30);
-        theMarket.makeSeller(40, 60);
-        theMarket.makeSeller(30, 40);
-        theMarket.makeSeller(35, 50);
-        theMarket.makeSeller(20, 30);
-        theMarket.makeSeller(20, 30);
-        theMarket.makeSeller(40, 60);
-        theMarket.makeSeller(30, 40);
-        theMarket.makeSeller(35, 50);
-        theMarket.makeSeller(20, 30);
+//        theMarket.makeSeller(20, 30);
+//        theMarket.makeSeller(40, 60);
+//        theMarket.makeSeller(30, 40);
+//        theMarket.makeSeller(35, 50);
+//        theMarket.makeSeller(20, 30);
+//        theMarket.makeSeller(20, 30);
+//        theMarket.makeSeller(40, 60);
+//        theMarket.makeSeller(30, 40);
+//        theMarket.makeSeller(35, 50);
+//        theMarket.makeSeller(20, 30);
+//        theMarket.makeSeller(20, 30);
+//        theMarket.makeSeller(40, 60);
+//        theMarket.makeSeller(30, 40);
+//        theMarket.makeSeller(35, 50);
+//        theMarket.makeSeller(20, 30);
 
         ArrayList<Integer> sellerDesirePrice = new ArrayList<>();
         ArrayList<Integer> buyerDesirePrice = new ArrayList<>();
@@ -63,11 +80,12 @@ public class Main {
             demand += theMarket.buyerList.get(j).highestBuyingPrice;
         }
         System.out.println("####total supply -->"+ supply + " ####total demand -->" + demand);
+        System.out.println("----average supply -->" + supply / theMarket.sellerList.size() + "---average demand -->" + demand / theMarket.buyerList.size());
 
         theMarket.startMarket();
 
         for(int x = 1; x <= 20; x++) {
-            // day one
+            // one day
             System.out.println("day " + x);
             while (!theMarket.checkMarketDone()) {
                 theMarket.makeOneTransaction();
@@ -98,6 +116,7 @@ public class Main {
         for(int j = 0; j < theMarket.buyerList.size(); j++){
             steadyDemand += theMarket.buyerList.get(j).desiredBuyingPrice;
         }
-        System.out.println("####total steady supply -->"+ steadySupply + " ####total steady demand -->" + steadyDemand);
+        System.out.println("####total steady supply -->" + steadySupply + " ####total steady demand -->" + steadyDemand);
+        System.out.println("----average steady supply -->" + steadySupply / theMarket.sellerList.size() + "---average steady demand -->" + steadyDemand / theMarket.buyerList.size());
     }
 }
