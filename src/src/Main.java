@@ -17,7 +17,7 @@ public class Main {
         theMarket.makeBuyer(60, 40);
         theMarket.makeBuyer(60, 40);
         theMarket.makeBuyer(60, 40);
-//        theMarket.makeBuyer(60, 40);
+        theMarket.makeBuyer(60, 40);
 
 //        theMarket.makeBuyer(60, 40);
 //        theMarket.makeBuyer(60, 40);
@@ -25,8 +25,8 @@ public class Main {
 //        theMarket.makeBuyer(60, 48);
 //        theMarket.makeBuyer(60, 50);
 //        theMarket.makeBuyer(60, 60);
-//        theMarket.makeBuyer(60, 60);
-//        theMarket.makeBuyer(60,46);
+////        theMarket.makeBuyer(60, 60);
+////        theMarket.makeBuyer(60,46);
 //        theMarket.makeBuyer(60, 48);
 //        theMarket.makeBuyer(60, 50);
 //        theMarket.makeBuyer(60, 60);

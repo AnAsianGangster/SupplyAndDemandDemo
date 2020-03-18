@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Random;
 
 public class Market {
@@ -80,14 +82,30 @@ public class Market {
             if(availSellerList.get(i).desiredSellingPrice > availSellerList.get(i).lowersetSellingPrice + marketPriceIndividualChange){
             availSellerList.get(i).desiredSellingPrice -= marketPriceIndividualChange;
             }
+            
         }
         for(int j = 0; j < availBuyerList.size(); j++){
             if(availBuyerList.get(j).desiredBuyingPrice < availBuyerList.get(j).highestBuyingPrice - marketPriceIndividualChange){
             availBuyerList.get(j).desiredBuyingPrice += marketPriceIndividualChange;
             }
         }
+        Collections.sort(sellerList, new sellerPriceComparator());
+        Collections.sort(buyerList, new buyerPriceComparator());
     }
-
-
-
 }
+
+class sellerPriceComparator implements Comparator<Seller> {
+    @Override
+    public int compare(Seller seller, Seller t1) {
+        return seller.desiredSellingPrice - t1.desiredSellingPrice;
+    }
+}
+
+class buyerPriceComparator implements Comparator<Buyer> {
+
+    @Override
+    public int compare(Buyer buyer, Buyer t1) {
+        return buyer.desiredBuyingPrice - t1.desiredBuyingPrice;
+    }
+}
+
